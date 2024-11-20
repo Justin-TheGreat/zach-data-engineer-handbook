@@ -5,9 +5,8 @@ services:
     container_name: ${DOCKER_CONTAINER}
     env_file:
       - .env
-      - example.env
     environment:
-      - POSTGRES_DB=${POSTGRES_SCHEMA}
+      - POSTGRES_DB=${POSTGRES_DB}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     ports:
